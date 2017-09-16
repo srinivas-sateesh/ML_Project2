@@ -18,8 +18,9 @@ colnames(HouseVotes84)[11]<-"immigration"
 colnames(HouseVotes84)[12]<-"synfuels-corporation-cutback"
 colnames(HouseVotes84)[13]<-"education-spending"
 colnames(HouseVotes84)[14]<-"superfund-right-to-sue"
-colnames(HouseVotes84)[15]<-"duty-free-exports"
-colnames(HouseVotes84)[16]<-"export-administration-act-south-africa"
+colnames(HouseVotes84)[15]<-"crime"
+colnames(HouseVotes84)[16]<-"duty-free-exports"
+colnames(HouseVotes84)[17]<-"export-administration-act-south-africa"
 sub<-sample(nrow(HouseVotes84),floor(nrow(HouseVotes84) * .7))
 train <- HouseVotes84[sub,]
 test <- HouseVotes84[-sub,]
