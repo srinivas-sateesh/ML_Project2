@@ -33,11 +33,13 @@ confusion_matrix_train <- table(predict(model$finalModel,xTrain)$class,yTrain)
 
 print("TRAIN-CONFUSION-MATRIX")
 
-print(confusion_matrix_train)
+print(confusionMatrix(confusion_matrix_train))
+
 confusion_matrix_test  <- table(predict(model$finalModel,xTest)$class,yTest)
 
 print("TEST-CONFUSION-MATRIX")
 
-print(confusion_matrix_test)
+print(confusionMatrix(confusion_matrix_test))
+
 
 
